@@ -16,28 +16,28 @@
         <tr v-for="(product, index) in products" :key="index">
           <td v-if="editIndex === index">
             <input
-              v-model="editableProduct.nombre"
+              v-model="editableProduct.name"
               type="text"
               class="form-control"
             />
           </td>
-          <td v-else>{{ product.nombre }}</td>
+          <td v-else>{{ product.name }}</td>
           <td v-if="editIndex === index">
             <input
-              v-model="editableProduct.descripcion"
+              v-model="editableProduct.description"
               type="text"
               class="form-control"
             />
           </td>
-          <td v-else>{{ product.descripcion }}</td>
+          <td v-else>{{ product.description }}</td>
           <td v-if="editIndex === index">
             <input
-              v-model="editableProduct.precio"
+              v-model="editableProduct.price"
               type="text"
               class="form-control"
             />
           </td>
-          <td v-else>{{ product.precio }}</td>
+          <td v-else>{{ product.price }}</td>
           <td v-if="editIndex === index">
             <button class="btn btn-light me-2" @click="editIndex = -1">
               Cancelar
@@ -88,9 +88,9 @@ export default {
     },
     saveProduct() {
       if (
-        !this.editableProduct.nombre.length ||
-        !this.editableProduct.descripcion.length ||
-        this.editableProduct.precio < 1
+        !this.editableProduct.name.length ||
+        !this.editableProduct.description.length ||
+        this.editableProduct.price < 1
       ) {
         return;
       }

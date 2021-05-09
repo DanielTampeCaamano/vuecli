@@ -31,19 +31,19 @@ export default {
     return {
       products: [
         {
-          nombre: "Uranio",
-          descripcion: "Para uso casero",
-          precio: 500,
+          name: "Uranio",
+          description: "Para uso casero",
+          price: 500,
         },
         {
-          nombre: "Unicornio",
-          descripcion: "3 cuernos",
-          precio: 600,
+          name: "Unicornio",
+          description: "3 cuernos",
+          price: 600,
         },
         {
-          nombre: "Dinosaurio",
-          descripcion: "Velociraptor 5 metros",
-          precio: 340,
+          name: "Dinosaurio",
+          description: "Velociraptor 5 metros",
+          price: 340,
         },
       ],
     };

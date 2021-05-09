@@ -20,7 +20,7 @@
               <input
                 type="text"
                 class="form-control"
-                v-model="product.descripcion"
+                v-model="product.description"
                 :class="{ 'is-invalid': error && invalidDescription }"
               />
             </div>
@@ -71,21 +71,21 @@ export default {
       sent: false,
       error: false,
       product: {
-        nombre: "",
-        descripcion: "",
-        precio: 100,
+        name: "",
+        description: "",
+        price: 100,
       },
     };
   },
   computed: {
     invalidName() {
-      return this.product.nombre.length < 1;
+      return this.product.name.length < 1;
     },
     invalidDescription() {
-      return this.product.descripcion.length < 1;
+      return this.product.description.length < 1;
     },
     invalidPrice() {
-      return this.product.precio.length < 1;
+      return this.product.price.length < 1;
     },
   },
   methods: {
@@ -102,9 +102,9 @@ export default {
     },
     resetForm() {
       this.product = {
-        nombre: "",
-        descripcion: "",
-        precio: 100,
+        name: "",
+        description: "",
+        price: 100,
       };
     },
   },
